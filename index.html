@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head href="style.css">
-<link rel="preload" as="image" href="backgroundDNB.png">
+<head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="java" href="java.js">
+    <link href="https://fonts.googleapis.com/css2?family=Brawler&family=Cormorant:wght@500&family=Lexend+Deca&display=swap" rel="stylesheet">
 
-    
-
-    <title>Home</title>
+    <title>Cloudsplitter Press</title>
 </head>
-     
+ 
+<body>  
 
-<header class="masthead">
-
-
-<nav class="navbar navbar-expand-sm navbar-light flex-nowrap" role='navigation'>
+  <nav class="navbar navbar-expand-lg navbar-light flex-nowrap transparent" role='navigation'>
 
     <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar5">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
-    <img src="logo.png" width="100" height="60" alt="logo">
-    <a class="navbar-brand w-100" href="index.html">Cloudsplitter Press</a>
+    <a href="index.html">
+    <img src="logo.png" href="index.html" width="100" height="60" alt="logo"></a>
     <div class="navbar-collapse collapse w-200" id="navbar5">
        
         <ul class="navbar-nav mx-auto center">
 
             <li class="nav-item">
-                <a class="nav-link " href="./page1.html">Short Stories</a>
+                <a class="nav-link " href="./shortStories.html">Short Stories</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="./page2.html">Recent Novels</a>
-            </li>
-
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">The Adirondack Trilogy</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Axton Landing</a>
-                    <a class="dropdown-item" href="#">The Railroad</a>
-                    <a class="dropdown-item" href="#">Forever Wild</a>
-                </div>
-            </li> -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="./page3.html">The Adirondack Trilogy</a>
+                <a class="nav-link" href="./recentNovels.html">Recent Novels</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="./page4.html">Contact and Ordering</a>
+                <a class="nav-link" href="./adkTrilogy.html">The Adirondack Trilogy</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="./page5.html">About the Author</a>
+                <a class="nav-link" href="./ordering.html">Contact and Ordering</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./author.html">About the Author</a>
             </li>
 
         </ul>
 
     </div>
-</nav>
+  </nav>
 
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">Welcome</h1>
-        <p class="font-weight-light">to</p>
-        <h2 class="font-weight-light"> Cloudsplitter Press </h2>
-        <!-- <p class="font-weight-light"> an independant press founded by Tony Holtzman </p> -->
-        <div id="scroll-wrapper">
-                <div id="scroll-wrapper-inner">
-                    <div id="scroll-title">
-                        Scroll to continue
-                    </div>
-                    <div id="scroll-down">
-                        <div class="arrow">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+<!-- News Bulletin Pop-up-->
 
-                        </div>
-                    </div>
-                </div>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newsBulletin">
+  News Bulletin Demo
+</button> -->
 
-            </div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="newsBulletin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Recent News</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h5>July 4, 2020</h5>
+          <p> 
+            Tony Holtzman's short story collection has been published! Click <a href="./shortStories.html" class="tooltip-test" title="click to view collection">here</a> for more information. </p>
+          <hr>
+          <h5>July 5, 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <hr>
+          <h5>July 6, 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <hr>
+          <h5>July 7, 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <hr>
+          <h5>July 8, 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <hr>
+          <h5>July 9, 2020</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </div>
+      <div class="modal-footer">
       </div>
     </div>
   </div>
-</header>
+</div> -->
+
+  <div class="homepage-text text-center">
+        <h1 class="welcome">Welcome</h1>
+        <h1 class="to">to</p>
+        <h1 class="cloudsplitter">Cloudsplitter Press</h2>
+        <h1 class="clickText">click to enter</h3>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
 
