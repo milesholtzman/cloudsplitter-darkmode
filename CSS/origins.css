@@ -1,3 +1,4 @@
+/* CSS Reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,6 +46,7 @@ table {
 
 /* CSS overflow */
 
+
 /*  */
 
 html,body {
@@ -67,8 +69,8 @@ html,body {
 
 
 .navbar {
-  background-color: #B9C5C8;
-  opacity: 0.80; 
+	background-color: #B9C5C8;
+	opacity: 0.80; 
     line-height: 1;
     width: 100%;
 }
@@ -84,107 +86,32 @@ html,body {
 }
 
 .navbar .navbar-nav .nav-item a.nav-link {
-  color: #445454;
+	color: #445454;
   text-align: center;
-  white-space: nowrap;
-  display: inline;
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 17px;
+	white-space: nowrap;
+	display: inline;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 17px;
   padding-right: 25px;
-  float: none;
+	float: none;
 }
 
 .header {
   text-align: center;
   font-family: "Cormorant", serif;
   font-size: 40px;
+  padding-bottom: 10px;
 }
 
-.scroll {
+.subheader {
   text-align: center;
   font-family: "Cormorant", serif;
-  font-size: 40px;
+  font-size: 20px;
+  margin-left:100px;
+  margin-right:100px;
 }
 
 .headerPadder {
   margin-bottom: 50px;
 }
-
-.section {
-  clear: both;
-  display: block;
-  opacity: 1;
-  transition: opacity 1.5s ease;
-}
-
-.hidden {
-    opacity: 0;
-    transition: opacity 1.5s ease;
-}
-
-.fadeOut {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.bethuneMuralsCover {
-  height: 441.65px;
-  width: 290px;
-  padding-top: 10px;
-}
-
-.titleBethuneMurals {
-  font-family: "Grenze Gotisch", cursive;
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-
-.titleBethuneMurals .year {
-  font-family: "cormorant", serif;
-  font-size: 40px;
-}
-
-.bodyMain {
-  font-family: "Cormorant", serif;
-  font-size: 30px;
-}
-
-.bodyPadder {
-  margin-bottom: 5px;
-}
-
-.bodyReview {
-  font-family: "Cormorant", serif;
-  font-size: 20px;
-}
-
-.reviewPadder {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.break {
-  margin-bottom: 200px;
-}
-
-.section .blameCover {
-  height: 100%;
-  width: 100%;
-}
-
-.titleBlame {
-  font-family: "PT Serif", serif;
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-
-.titleBlame .year {
-  font-family: "Cormorant", serif;
-  font-size: 40px;
-}
-
-.end {
-  margin-bottom: 75px;
-}
-
 

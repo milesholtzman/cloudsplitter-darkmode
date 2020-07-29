@@ -142,9 +142,16 @@ html,body {
     font-family: 'ProximaNovaBold';
     font-size: 30px;
     letter-spacing: 0.1em;
-    animation: fadeIn ease 8s;
-    -webkit-animation: fadeIn ease 8s;
-    
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+}
+
+.clickText:hover {
+  color: #b9c5c8;
+    opacity: 0.9; 
+    font-family: 'ProximaNovaBold';
+    font-size: 30px;
+    letter-spacing: 0.1em;
 }
 
 @keyframes fadeIn {
