@@ -115,3 +115,27 @@ html,body {
   margin-bottom: 50px;
 }
 
+.bodyText {
+  text-align: left;
+  text-indent: 50px;
+  font-family: "Cormorant", serif;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.signed {
+  text-align: left;
+  font-family: "Cormorant", serif;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.signature {
+  height: 35%;
+  width: 35%;
+}
+
+.container {
+  padding-bottom: 100px;
+}

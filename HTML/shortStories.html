@@ -64,6 +64,10 @@
     <div class="row align-items-center body">
         <div class="col-4 text-center">
             <img src="../Images/shortStoriesCover.jpg" alt="cover image" class="coverImage">
+            <div class="middle">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#staticBackdrop">click to view ordering info</button>
+            </div>
+            <h5 class="hoverPrompt">hover for more info</h5>
             <!-- <hr class="buttonPadder">
             <a href="https://amazon.com/"><img src="../Images/buttonIB.png" alt="available at IndieBound" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonBarnes.png" alt="available at Barnes & Noble" role="link" width="50%"></a>
             
@@ -74,14 +78,16 @@
 
          <div class="col-8 text-center">
             <h2 class="pulsate">scroll to continue</h2>
-            <div id="scroll-down">
+            <hr class="scrollPadder">
+            
+            <!-- <div id="scroll-down">
                         <div class="arrow">
                             <span></span>
                             <span></span>
                             <span></span>
 
                         </div>
-                    </div>
+                    </div> -->
             <!-- <hr class="headingPadder"> -->
         <section class="section hidden">
             <h1 class="listElement story">The Strange Malady of Alessandro's Uncle</h1>
@@ -136,9 +142,46 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Ordering Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../Images/shortStoriesCover.jpg" class="modalImage" alt="cover image">
+                </div>
+            <div class="col-8">
+                <h5 class="modalText"><span class="modalKey">Title: </span>The Strange Malady of Alessandro's Uncle</h5>
+                <h5 class="modaltext"><span class="modalKey">Author: </span>Tony Holtzman</h5>
+                <h5 class="modalText"><span class="modalKey">ISBN: </span>978-09984889360</h5>
+                <h5 class="modalText"><span class="modalKey">Published: </span>July 4, 2020</h5>
+                <h5 class="modalText"><span class="modalKey">Publisher: </span>Cloudspitter Press</h5>
+                <hr class="infoPadder">
+                <a href="https://amazon.com/"><img src="../Images/buttonIB.png" alt="available at IndieBound" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonBarnes.png" alt="available at Barnes & Noble" role="link" width="50%"></a>
+            <a href="https://amazon.com/"><img src="../Images/buttonBAM.png" alt="available at Books-a-Million" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonAmazon2.png" alt="available at amazon" role="link" width="50%"></a>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
 <script src="../JS/shortStories.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

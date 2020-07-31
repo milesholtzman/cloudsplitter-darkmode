@@ -61,6 +61,10 @@
             <div class="row align-items-start body">
                 <div class="col-4 text-center">
                     <img src="../Images/bethuneMuralsCover.png" class="bethuneMuralsCover" alt="cover artwork">
+                    <div class="middle">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalBethuneMurals">click to view ordering info</button>
+            </div>
+            <h5 class="hoverPrompt">hover for more info</h5>
                 </div>
 
                 <div class="col-8 text-left">
@@ -86,6 +90,9 @@
 
                 <div class="col-4 text-center">
                     <img src="../Images/blameCover.jpg" class="blameCover" alt="cover artwork">
+                    <div class="middle">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalBlame">click to view ordering info</button>
+            </div>
                 </div>
 
                 <div class="col-8 text-left">
@@ -109,9 +116,80 @@
             </div>
             </section>
         </div>
+
+<div id="modalBethuneMurals" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalBethuneMuralsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBethuneMuralsLabel">Ordering Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../Images/bethuneMuralsCover.png" class="modalImage" alt="cover image">
+                </div>
+            <div class="col-8">
+                <h5 class="modalText"><span class="modalKey">Title: </span>The Bethune Murals</h5>
+                <h5 class="modaltext"><span class="modalKey">Author: </span>Tony Holtzman</h5>
+                <h5 class="modalText"><span class="modalKey">ISBN: </span>978-0998489339</h5>
+                <h5 class="modalText"><span class="modalKey">Published: </span>May 30, 2018</h5>
+                <h5 class="modalText"><span class="modalKey">Publisher: </span>Cloudspitter Press</h5>
+                <hr class="infoPadder">
+                <a href="https://amazon.com/"><img src="../Images/buttonIB.png" alt="available at IndieBound" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonBarnes.png" alt="available at Barnes & Noble" role="link" width="50%"></a>
+            <a href="https://amazon.com/"><img src="../Images/buttonBAM.png" alt="available at Books-a-Million" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonAmazon2.png" alt="available at amazon" role="link" width="50%"></a>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalBlame" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalBlameLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBlameLabel">Ordering Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../Images/blameCover.jpg" class="modalImage" alt="cover image">
+                </div>
+            <div class="col-8">
+                <h5 class="modalText"><span class="modalKey">Title: </span>blame</h5>
+                <h5 class="modaltext"><span class="modalKey">Author: </span>Tony Holtzman</h5>
+                <h5 class="modalText"><span class="modalKey">ISBN: </span>978-0998489339</h5>
+                <h5 class="modalText"><span class="modalKey">Published: </span>May 30, 2018</h5>
+                <h5 class="modalText"><span class="modalKey">Publisher: </span>Cloudspitter Press</h5>
+                <hr class="infoPadder">
+                <a href="https://amazon.com/"><img src="../Images/buttonIB.png" alt="available at IndieBound" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonBarnes.png" alt="available at Barnes & Noble" role="link" width="50%"></a>
+            <a href="https://amazon.com/"><img src="../Images/buttonBAM.png" alt="available at Books-a-Million" role="link" width="50%"></a><a href="https://amazon.com/"><img src="../Images/buttonAmazon2.png" alt="available at amazon" role="link" width="50%"></a>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
 <script src="../JS/recentNovels.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
