@@ -2,7 +2,7 @@
 // console.log(firstHeading);
 // console.log(firstHeading.getBoundingClientRect());
 
-// let numberOfScans = 1
+let numberOfScans = 1
 
 function isVisible(element) {
     let elementBox = element.getBoundingClientRect();
@@ -17,9 +17,9 @@ function isVisible(element) {
 
 function isLeavingTop(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = 50;
+    let distanceFromTop = 400;
 
-    if(elementBox.top < distanceFromTop) {
+    if(elementBox.bottom < distanceFromTop) {
         return true;
     } else {
         return false;
@@ -28,9 +28,9 @@ function isLeavingTop(element) {
 
 function isReturning(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = 0
+    let distanceFromTop = 300
 
-    if(elementBox.top > distanceFromTop) {
+    if(elementBox.bottom > distanceFromTop) {
         return true;
     } else {
         return false;
@@ -56,6 +56,9 @@ function scanDocumentDown() {
         } else {
             section.classList.add('hidden')
         };
+
+            console.log(numberOfScans);
+            numberOfScans++;
 
         
     })
@@ -90,8 +93,7 @@ function hasLeftAgain() {
 
 
         
-    // console.log(numberOfScans);
-    // numberOfScans++;
+
 
 
 window.addEventListener('load', scanDocumentDown);

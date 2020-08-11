@@ -53,7 +53,7 @@ html,body {
   height: 100%;
   min-height: 100%;
   width: 100%;
-  background-image: url('../Images/backgroundCroppedAndSubdued.png');
+  background-image: url('../Images/backgroundSubdued.png');
   background-image-min-height: 100%;
   background-image-width: 100%;
   background-image-height: auto;
@@ -67,10 +67,18 @@ html,body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "PhilosopherBold";
+  src: url("../Fonts/philosopherBold.ttf");
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../Fonts/philosopher.ttf");
+}
 
 .navbar {
 	background-color: #B9C5C8;
-	opacity: 0.80; 
     line-height: 1;
     width: 100%;
 }
@@ -86,7 +94,7 @@ html,body {
 }
 
 .navbar .navbar-nav .nav-item a.nav-link {
-	color: #445454;
+	color: #000000;
   text-align: center;
 	white-space: nowrap;
 	display: inline;
@@ -96,44 +104,65 @@ html,body {
 	float: none;
 }
 
-.header {
-  text-align: center;
-  font-family: "Cormorant", serif;
-  font-size: 40px;
-  padding-bottom: 10px;
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.subheader {
+.header {
   text-align: center;
-  font-family: "Cormorant", serif;
-  font-size: 20px;
-  margin-left:100px;
-  margin-right:100px;
+  font-family: "PhilosopherBold";
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .headerPadder {
   margin-bottom: 50px;
 }
 
+.break {
+  text-align: left;
+  font-family: "Red Rose", sans-serif;
+  font-size: 25px;
+  font-weight: "bolder";
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.headshot {
+  width:75%;
+  height:75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+  margin-bottom: 10px;
+}
+
+.authorName {
+  font-family: "Red Rose", sans-serif;
+}
+
+.authorInfoPadder {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.authorInfo {
+  font-family: "Red Rose", sans-serif;
+  margin-bottom: 5px;
+}
+
+.authorInfoKey {
+  font-family: "Red Rose", sans-serif;
+  font-weight: "bolder";
+  margin-bottom: 10px;
+}
+
 .bodyText {
   text-align: left;
   text-indent: 50px;
-  font-family: "Cormorant", serif;
+  font-family: "Red Rose", sans-serif;
   font-size: 25px;
   padding-bottom: 20px;
-}
-
-.signed {
-  text-align: left;
-  font-family: "Cormorant", serif;
-  font-size: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.signature {
-  height: 35%;
-  width: 35%;
 }
 
 .container {

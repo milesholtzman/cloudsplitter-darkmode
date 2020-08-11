@@ -1,0 +1,344 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS overflow */
+
+/*  */
+
+html,body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-image: url('../Images/backgroundSubdued.png');
+  background-image-min-height: 100%;
+  background-image-width: 100%;
+  background-image-height: auto;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  background-color: #B9C5C8;
+    line-height: 1;
+    width: 100%;
+}
+
+.navbar.transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.navbar .navbar-nav .nav-item a.nav-link {
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  display: inline;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 17px;
+  padding-right: 25px;
+  float: none;
+}
+
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("../Fonts/ProximaNovaThin.otf");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../Fonts/ProximaNovaRegular.otf");
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../Fonts/ProximaNovaBold.otf");
+}
+
+@font-face {
+  font-family: "SelznickNF";
+  src: url("../Fonts/selznick-nf.otf");
+}
+
+@font-face {
+  font-family: "PhilosopherBold";
+  src: url("../Fonts/philosopherBold.ttf");
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header {
+  text-align: center;
+  font-family: "PhilosopherBold";
+  font-size: 40px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.headerPadder {
+  margin-bottom: 50px;
+}
+
+.section {
+  clear: both;
+  display: block;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.axtonLandingCover {
+  height: 75%;
+  width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.titleAxtonLanding {
+  font-family: "Playfair Display SC", serif;
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.section .theRailroadCover {
+  height: 75%;
+  width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.titleTheRailroad {
+  font-family: "Playfair Display SC", serif;
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.section .foreverWildCover {
+  height: 75%;
+  width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.titleForeverWild {
+  font-family: "Playfair Display SC", serif;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.col-4.text-center:hover .axtonLandingCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .theRailroadCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .foreverWildCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .middle {
+  opacity: 1;
+}
+
+.bethuneMuralsCover {
+  height: 90%;
+  width: 90%;
+  padding-top: 10px;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.hoverPrompt {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.innerHeaderBethuneMurals {
+  font-family: "SelznickNF";
+  font-size: 2.5vmin;
+  margin-bottom: 2.5vmin;
+}
+
+.innerHeaderBlame {
+  font-family: "PT Serif", serif;
+  font-size: 2.5vmin;
+  margin-bottom: 2.5vmin;
+}
+
+.innerText {
+  text-align: center;
+  line-height: 1.9vmin;
+  font-size: 1.9vmin;
+  margin-bottom: 1.9vmin;
+  font-family: "ProximaNova";
+
+}
+
+.innerKey {
+  font-family: "ProximaNovaBold";
+  font-weight: "bolder";
+}
+
+.innerLink {
+  color: #2194c3;
+}
+
+.innerLink:hover {
+  text-decoration: none;
+}
+
+.col-4.text-center {
+  position: relative;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.col-4.text-center:hover .bethuneMuralsCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .blameCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .middle {
+  opacity: 1;
+}
+
+.innerKey {
+  font-weight: bolder;
+}
+
+.titleBethuneMurals {
+  font-family: "SelznickNF";
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.titleBethuneMurals .year {
+  font-family: "cormorant", serif;
+  font-size: 55px;
+}
+
+.bodyMain {
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+}
+
+.bodyPadder {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bodyReview {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+}
+
+.reviewPadder {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.break {
+  margin-top: 10px;
+  margin-bottom: 300px;
+}
+
+.section .blameCover {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.titleBlame {
+  font-family: "PT Serif", serif;
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.titleBlame .year {
+  font-family: "Cormorant", serif;
+  font-size: 55px;
+}
+
+.end {
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+
+

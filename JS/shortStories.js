@@ -6,7 +6,7 @@
 
 function isVisible(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = -150; 
+    let distanceFromTop = -100; 
 
     if(elementBox.top - window.innerHeight < distanceFromTop) {
         return true;
@@ -15,11 +15,11 @@ function isVisible(element) {
     }
 }
 
-function isLeaving(element) {
+function isLeavingTop(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = 200;
+    let distanceFromTop = 350;
 
-    if(elementBox.top < distanceFromTop) {
+    if(elementBox.bottom < distanceFromTop) {
         return true;
     } else {
         return false;
@@ -28,9 +28,20 @@ function isLeaving(element) {
 
 function isReturning(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = 150
+    let distanceFromTop = 300
 
-    if(elementBox.top > distanceFromTop) {
+    if(elementBox.bottom > distanceFromTop) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isLeavingBottom(element) {
+    let elementBox = element.getBoundingClientRect();
+    let distanceFromBottom = 150; 
+
+    if(elementBox.bottom < distanceFromBottom) {
         return true;
     } else {
         return false;
@@ -53,7 +64,7 @@ function scanDocumentDown() {
 function scanDocumentUp() {
     let fadeOutList = document.querySelectorAll('.section');
     fadeOutList.forEach(function(section) {
-        if(isLeaving(section)) {
+        if(isLeavingTop(section)) {
             section.classList.add('fadeOut')
         }
     })
@@ -68,6 +79,15 @@ function scanDocumentReanimate() {
     })
 }
 
+function hasLeftAgain() {
+    let visibleList = document.querySelectorAll('.section');
+    visibleList.forEach(function(section) {
+        if(isLeavingBottom(section)) {
+            visibleList.classList.add('fadeOut')
+        }
+    })
+}
+
 
         
     // console.log(numberOfScans);
@@ -77,7 +97,7 @@ function scanDocumentReanimate() {
 window.addEventListener('load', scanDocumentDown);
 document.addEventListener('wheel', scanDocumentDown);
 document.addEventListener('wheel', scanDocumentUp);
-document.addEventListener('wheel', scanDocumentReanimate)
+document.addEventListener('wheel', scanDocumentReanimate);
 
 
 // function throttle(fn, wait) {

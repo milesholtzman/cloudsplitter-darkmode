@@ -53,7 +53,7 @@ html,body {
   height: 100%;
   min-height: 100%;
   width: 100%;
-  background-image: url('../Images/backgroundCropped3.png');
+  background-image: url('../Images/background.jpeg');
   background-image-min-height: 100%;
   background-image-width: 100%;
   background-image-height: auto;
@@ -65,14 +65,29 @@ html,body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
+@font-face {
+  font-family: "Philosopher";
+  src: url("../Fonts/philosopher.ttf");
+}
+
+@font-face {
+  font-family: "PhilosopherBold";
+  src: url("../Fonts/philosopherBold.ttf");
+}
 
 .navbar {
-	background-color: #B9C5C8;
-	opacity: 0.80; 
-    line-height: 1;
-    width: 100%;
+  position: relative;
+	/*background-color: #f1f1f1;*/
+  opacity: 0.9;
+  line-height: 1;
+  width: 100%;
+  height: 60px;
+  transition: 1s ease;
+  z-index: 2;
+  animation: fadeIn ease 6s;
 }
 
 .navbar.transparent {
@@ -86,7 +101,7 @@ html,body {
 }
 
 .navbar .navbar-nav .nav-item a.nav-link {
-	color: #445454;
+	color: #ffffff;
   text-align: center;
 	white-space: nowrap;
 	display: inline;
@@ -94,64 +109,174 @@ html,body {
 	font-size: 17px;
   padding-right: 25px;
 	float: none;
+  height: 60px;
+  z-index: 2;
 }
 
-.homepage-text {
+hr {
+  background-color: #ffffff;
+  opacity: 0.5;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+/*.block {
+  position: relative;
+  background-color: #003349;
+  width: 0px;
+  height: 110%;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+  z-index: 1;
+  margin-top: -65px;
+}
+
+.blockHeader {
+  text-align: center;
+  font-family: "PhilosopherBold";
+  font-size: 70px;
+  color: #f2c7ae;
+  margin-top: 150px;
+  padding-bottom: 30px;
+  transition: 3s ease;
+}
+
+.blockDescriptor {
+  text-align: left;
+  font-family: "Red Rose", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  transition: 3s ease;
+}
+
+.blockLink {
+  align-items: center;
+  font-family: "Red Rose", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 3s ease;
+}
+
+.blockLink:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.blockNewsHeader {
+  font-family: "PhilosopherBold";
+  font-size: 45px;
+  color: #f2c7ae;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  transition: 3s ease;
+}
+
+.blockNewsList {
+  text-align: left;
+  font-family: "Red Rose", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  transition: 3s ease;
+}
+
+.blockNewsElementDate {
+  align-items: center;
+  font-family: "Red Rose", sans-serif;
+  font-size: 27px;
+  font-weight: "bolder";
+  color: #ffffff;
+  animation-delay: 3s;
+  transition: 3s ease;
+}
+
+.blockNewsElementLink {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 3s ease;
+}
+
+.blockNewsElementLink:hover {
+  color: #ffffff;
+  text-decoration: none;
+}*/
+
+/*.homepage-text {
   position: absolute;
-  top: 62%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 1.38;
+  z-index: 0;
+}*/
+
+.container.header {
+  padding-top: 200px;
   line-height: 1.38;
 
 }
 
-
 .welcome {
-	color: #b9c5c8;
+	color: #eaf0f2;
 	opacity: 0.9;
-	font-family: 'ProximaNovaBold';
-	font-size: 60px; 
+	font-family: 'Philosopher';
+	font-size: 70px; 
 	letter-spacing: 0.1em;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
 }
 
 .to {
-	color: #b9c5c8;
+	color: #eaf0f2;
 	opacity: 0.9; 
-	font-family: 'ProximaNovaBold';
-	font-size: 30px;
+	font-family: 'Philosopher';
+	font-size: 26px;
 	letter-spacing: 0.1em;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
 }
 
 .cloudsplitter {
-    color: #b9c5c8;
+    color: #eaf0f2;
     opacity: 0.9;
-    font-family: 'ProximaNovaBold';
-    font-size: 60px; 
+    font-family: 'Philosopher';
+    font-size: 70px; 
+    white-space: nowrap;
     letter-spacing: 0.1em;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
 }
 
 .clickText{
-    color: #b9c5c8;
+    background: none;
+    border: none;
+    color: #eaf0f2;
     opacity: 0.9; 
-    font-family: 'ProximaNovaBold';
-    font-size: 30px;
+    font-family: 'Philosopher';
+    font-size: 26px;
     letter-spacing: 0.1em;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
 }
 
 .clickText:hover {
-  color: #b9c5c8;
+  color: #ffffff;
     opacity: 0.9; 
-    font-family: 'ProximaNovaBold';
-    font-size: 30px;
+    font-family: 'Philosopher';
+    font-size: 26px;
     letter-spacing: 0.1em;
+    text-decoration: none;
 }
 
 @keyframes fadeIn {
@@ -178,3 +303,54 @@ html,body {
 0% {opacity:0;}
 100% {opacity:0.9;}
 }
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.container.body {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.col-6 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: #ffffff;
+  font-family: "PhilosopherBold";
+  font-size: 50px;
+  text-align: center;
+}
+
+.subheader {
+  color: #ffffff;
+  font-family: "Philosopher";
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.book {
+  width: 25%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+
+
+
+
+
+
+
+
+

@@ -51,7 +51,7 @@ html,body {
   height: 100%;
   min-height: 100%;
   width: 100%;
-  background-image: url('../Images/backgroundCroppedAndSubdued.png');
+  background-image: url('../Images/backgroundSubdued.png');
   background-image-min-height: 100%;
   background-image-width: 100%;
   background-image-height: auto;
@@ -68,7 +68,6 @@ html,body {
 
 .navbar {
   background-color: #B9C5C8;
-  opacity: 0.80; 
     line-height: 1;
     width: 100%;
 }
@@ -84,7 +83,7 @@ html,body {
 }
 
 .navbar .navbar-nav .nav-item a.nav-link {
-  color: #445454;
+  color: #000000;
   text-align: center;
   white-space: nowrap;
   display: inline;
@@ -98,15 +97,35 @@ html,body {
   text-align: center;
   font-family: "Cormorant", serif;
   font-size: 40px;
-  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .subheader {
   text-align: center;
   font-family: "Cormorant", serif;
   font-size: 20px;
-  margin-left:100px;
-  margin-right:100px;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("../Fonts/ProximaNovaThin.otf");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../Fonts/ProximaNovaRegular.otf");
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../Fonts/ProximaNovaBold.otf");
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .headerPadder {
@@ -133,6 +152,68 @@ html,body {
 .axtonLandingCover {
   height: 75%;
   width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+}
+
+.hoverPrompt {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.innerHeader {
+  font-family: "Playfair Display SC", serif;
+  font-weight: "bolder";
+  font-size: 1.65vmin;
+  margin-bottom: 1.65vmin;
+}
+
+.innerText {
+  text-align: center;
+  line-height: 1.65vmin;
+  font-size: 1.65vmin;
+  margin-bottom: 1.65vmin;
+  font-family: "ProximaNova";
+
+}
+
+.innerKey {
+  font-family: "ProximaNovaBold";
+  font-weight: "bolder";
+}
+
+.innerLink {
+  color: #2194c3;
+}
+
+.innerLink:hover {
+  text-decoration: none;
+}
+
+.col-4.text-center:hover .axtonLandingCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .theRailroadCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .foreverWildCover {
+  opacity: 0.075;
+}
+
+.col-4.text-center:hover .middle {
+  opacity: 1;
 }
 
 .titleAxtonLanding {
@@ -161,12 +242,14 @@ html,body {
 }
 
 .break {
-  margin-bottom: 200px;
+  margin-top: 25px;
+  margin-bottom: 350px;
 }
 
 .section .theRailroadCover {
   height: 75%;
   width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
 .titleTheRailroad {
@@ -178,6 +261,7 @@ html,body {
 .section .foreverWildCover {
   height: 75%;
   width: 75%;
+  filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
 .titleForeverWild {
@@ -187,5 +271,6 @@ html,body {
 }
 
 .end {
+  margin-top: 25px;
   margin-bottom: 200px;
 }
