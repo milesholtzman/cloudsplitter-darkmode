@@ -79,15 +79,13 @@ html,body {
 }
 
 .navbar {
-  position: relative;
-	/*background-color: #f1f1f1;*/
   opacity: 0.9;
   line-height: 1;
   width: 100%;
-  height: 60px;
+  /*height: 60px;*/
   transition: 1s ease;
   z-index: 2;
-  animation: fadeIn ease 6s;
+  /*animation: fadeIn ease 6s;*/
 }
 
 .navbar.transparent {
@@ -113,12 +111,12 @@ html,body {
   z-index: 2;
 }
 
-hr {
+/*hr {
   background-color: #ffffff;
   opacity: 0.5;
   margin-right:40px;
   margin-left:40px;
-}
+}*/
 
 /*.block {
   position: relative;
@@ -314,9 +312,23 @@ hr {
     transition: opacity 1s ease;
 }
 
+.pageHeader {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.9;
+  font-family: "PhilosopherBold";
+  font-size: 40px;
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+.headerPadder {
+  margin-bottom: 50px;
+}
+
 .container.body {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  /*padding-top: 300px;*/
+  padding-bottom: 30px;
 }
 
 .col-6 {
@@ -325,26 +337,67 @@ hr {
   align-items: center;
 }
 
+.books {
+  border-left: 1px solid white;
+}
+
 .header {
   color: #ffffff;
+  opacity: 0.9;
   font-family: "PhilosopherBold";
   font-size: 50px;
   text-align: center;
 }
 
-.subheader {
+.footer {
   color: #ffffff;
+  opacity: 0.9;
   font-family: "Philosopher";
   font-size: 30px;
   text-align: center;
-  padding-bottom: 10px;
+}
+
+.bookContainer {
+  margin-top: 0px;
 }
 
 .book {
-  width: 25%;
+  width: 125%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
+  margin-top: 0px;
 }
 
+.newsElementDate {
+  font-family: "PhilosopherBold";
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 25px;
+}
+
+.newsElement {
+  font-family: "Philosopher";
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.newsElementLink {
+  font-family: "Philosopher";
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 20px;
+  text-decoration: underline
+}
+
+.newsElementLink:hover {
+  font-family: "Philosopher";
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 20px;
+  /*margin-top: 20px;*/
+  text-decoration: none
+}
 
 
 
