@@ -68,25 +68,16 @@ html,body {
   overflow-y: auto;
 }
 
-@font-face {
-  font-family: "Philosopher";
-  src: url("../Fonts/philosopher.ttf");
-}
-
-@font-face {
-  font-family: "PhilosopherBold";
-  src: url("../Fonts/philosopherBold.ttf");
-}
-
 .navbar {
   opacity: 0.9;
   line-height: 1;
   width: 100%;
-  /*height: 60px;*/
   transition: 1s ease;
   z-index: 2;
-  /*animation: fadeIn ease 6s;*/
+  animation: fadeIn ease 6s;
+  -webkit-animation: fadeIn ease 6s;
 }
+
 
 .navbar.transparent {
     border-width: 0px;
@@ -111,105 +102,6 @@ html,body {
   z-index: 2;
 }
 
-/*hr {
-  background-color: #ffffff;
-  opacity: 0.5;
-  margin-right:40px;
-  margin-left:40px;
-}*/
-
-/*.block {
-  position: relative;
-  background-color: #003349;
-  width: 0px;
-  height: 110%;
-  align-items: center;
-  text-align: center;
-  overflow-y: auto;
-  z-index: 1;
-  margin-top: -65px;
-}
-
-.blockHeader {
-  text-align: center;
-  font-family: "PhilosopherBold";
-  font-size: 70px;
-  color: #f2c7ae;
-  margin-top: 150px;
-  padding-bottom: 30px;
-  transition: 3s ease;
-}
-
-.blockDescriptor {
-  text-align: left;
-  font-family: "Red Rose", sans-serif;
-  font-size: 22px;
-  color: #ffffff;
-  padding-right: 20px;
-  padding-left: 40px;
-  padding-bottom: 30px;
-  transition: 3s ease;
-}
-
-.blockLink {
-  align-items: center;
-  font-family: "Red Rose", sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: underline;
-  padding-top: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-  transition: 3s ease;
-}
-
-.blockLink:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.blockNewsHeader {
-  font-family: "PhilosopherBold";
-  font-size: 45px;
-  color: #f2c7ae;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  transition: 3s ease;
-}
-
-.blockNewsList {
-  text-align: left;
-  font-family: "Red Rose", sans-serif;
-  font-size: 22px;
-  line-height: 25px;
-  color: #ffffff;
-  padding-right: 20px;
-  padding-left: 40px;
-  padding-bottom: 30px;
-  transition: 3s ease;
-}
-
-.blockNewsElementDate {
-  align-items: center;
-  font-family: "Red Rose", sans-serif;
-  font-size: 27px;
-  font-weight: "bolder";
-  color: #ffffff;
-  animation-delay: 3s;
-  transition: 3s ease;
-}
-
-.blockNewsElementLink {
-  color: #ffffff;
-  text-decoration: underline;
-  transition: 3s ease;
-}
-
-.blockNewsElementLink:hover {
-  color: #ffffff;
-  text-decoration: none;
-}*/
-
 /*.homepage-text {
   position: absolute;
   top: 50%;
@@ -228,32 +120,32 @@ html,body {
 .welcome {
 	color: #eaf0f2;
 	opacity: 0.9;
-	font-family: 'Philosopher';
+	font-family: 'Philosopher', sans-serif;
 	font-size: 70px; 
 	letter-spacing: 0.1em;
-    animation: fadeIn ease 6s;
-    -webkit-animation: fadeIn ease 6s;
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
 }
 
 .to {
 	color: #eaf0f2;
 	opacity: 0.9; 
-	font-family: 'Philosopher';
+	font-family: 'Philosopher', sans-serif;
 	font-size: 26px;
 	letter-spacing: 0.1em;
-    animation: fadeIn ease 6s;
-    -webkit-animation: fadeIn ease 6s;
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
 }
 
 .cloudsplitter {
     color: #eaf0f2;
     opacity: 0.9;
-    font-family: 'Philosopher';
+    font-family: 'Philosopher', sans-serif;
     font-size: 70px; 
     white-space: nowrap;
     letter-spacing: 0.1em;
-    animation: fadeIn ease 6s;
-    -webkit-animation: fadeIn ease 6s;
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
 }
 
 .clickText{
@@ -261,17 +153,18 @@ html,body {
     border: none;
     color: #eaf0f2;
     opacity: 0.9; 
-    font-family: 'Philosopher';
+    font-family: 'Philosopher', sans-serif;
     font-size: 26px;
     letter-spacing: 0.1em;
     animation: fadeIn ease 6s;
     -webkit-animation: fadeIn ease 6s;
+    margin-bottom: 300px;
 }
 
 .clickText:hover {
   color: #ffffff;
     opacity: 0.9; 
-    font-family: 'Philosopher';
+    font-family: 'Philosopher', sans-serif;
     font-size: 26px;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -279,27 +172,39 @@ html,body {
 
 @keyframes fadeIn {
 0% {opacity:0;}
+35% {opacity:0;}
 100% {opacity:0.9;}
 }
 
 @-moz-keyframes fadeIn {
 0% {opacity:0;}
+35% {opacity:0;}
 100% {opacity:0.9;}
 }
 
 @-webkit-keyframes fadeIn {
 0% {opacity:0;}
+35% {opacity:0;}
 100% {opacity:0.9;}
 }
 
 @-o-keyframes fadeIn {
 0% {opacity:0;}
+35% {opacity:0;}
 100% {opacity:0.9;}
 }
 
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
+35% {opacity:0;}
 100% {opacity:0.9;}
+}
+
+.section {
+  clear: both;
+  display: block;
+  opacity: 1;
+  transition: opacity 1.5s ease;
 }
 
 .fadeOut {
@@ -316,7 +221,8 @@ html,body {
   text-align: center;
   color: #ffffff;
   opacity: 0.9;
-  font-family: "PhilosopherBold";
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   margin-top:10px;
   margin-bottom:30px;
@@ -327,8 +233,9 @@ html,body {
 }
 
 .container.body {
-  /*padding-top: 300px;*/
-  padding-bottom: 30px;
+  /*height: 40vh;*/
+  padding-bottom: 100px;
+  padding-top: 75px;
 }
 
 .col-6 {
@@ -344,7 +251,8 @@ html,body {
 .header {
   color: #ffffff;
   opacity: 0.9;
-  font-family: "PhilosopherBold";
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
   font-size: 50px;
   text-align: center;
 }
@@ -352,8 +260,8 @@ html,body {
 .footer {
   color: #ffffff;
   opacity: 0.9;
-  font-family: "Philosopher";
-  font-size: 30px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -361,21 +269,38 @@ html,body {
   margin-top: 0px;
 }
 
+.bookContainer .row {
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.bookContainer .row > .col {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .book {
   width: 125%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
-  margin-top: 0px;
+}
+
+.newsList {
+  max-width: 93%;
 }
 
 .newsElementDate {
-  font-family: "PhilosopherBold";
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   opacity: 0.9;
   font-size: 25px;
 }
 
 .newsElement {
-  font-family: "Philosopher";
+  font-family: "Philosopher", sans-serif;
   color: #ffffff;
   opacity: 0.9;
   font-size: 20px;
@@ -383,7 +308,7 @@ html,body {
 }
 
 .newsElementLink {
-  font-family: "Philosopher";
+  font-family: "Philosopher", sans-serif;
   color: #ffffff;
   opacity: 0.9;
   font-size: 20px;
@@ -391,7 +316,7 @@ html,body {
 }
 
 .newsElementLink:hover {
-  font-family: "Philosopher";
+  font-family: "Philosopher", sans-serif;
   color: #ffffff;
   opacity: 0.8;
   font-size: 20px;

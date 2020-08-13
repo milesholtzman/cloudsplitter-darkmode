@@ -51,7 +51,7 @@ html,body {
   height: 100%;
   min-height: 100%;
   width: 100%;
-  background-image: url('../Images/backgroundSubdued.png');
+  background-image: url('../Images/backgroundSubduedExperimental.png');
   background-image-min-height: 100%;
   background-image-width: 100%;
   background-image-height: auto;
@@ -94,28 +94,8 @@ html,body {
 }
 
 @font-face {
-  font-family: "ProximaNovaThin";
-  src: url("../Fonts/ProximaNovaThin.otf");
-}
-
-@font-face {
-  font-family: "ProximaNova";
-  src: url("../Fonts/ProximaNovaRegular.otf");
-}
-
-@font-face {
-  font-family: "ProximaNovaBold";
-  src: url("../Fonts/ProximaNovaBold.otf");
-}
-
-@font-face {
   font-family: "SelznickNF";
   src: url("../Fonts/selznick-nf.otf");
-}
-
-@font-face {
-  font-family: "PhilosopherBold";
-  src: url("../Fonts/philosopherBold.ttf");
 }
 
 hr {
@@ -125,7 +105,8 @@ hr {
 
 .header {
   text-align: center;
-  font-family: "PhilosopherBold";
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   margin-top:10px;
   margin-bottom:10px;
@@ -153,32 +134,32 @@ hr {
 }
 
 .axtonLandingCover {
-  height: 75%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
 .titleAxtonLanding {
   font-family: "Playfair Display SC", serif;
-  font-size: 55px;
+  font-size: 40px;
   padding-bottom: 10px;
 }
 
 .section .theRailroadCover {
-  height: 75%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
 .titleTheRailroad {
   font-family: "Playfair Display SC", serif;
-  font-size: 55px;
+  font-size: 40px;
   padding-bottom: 10px;
 }
 
 .section .foreverWildCover {
-  height: 75%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
@@ -212,7 +193,7 @@ hr {
 }
 
 .hoverPrompt {
-  font-family: "Cormorant", serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 20px;
   margin-top: 5px;
 }
@@ -225,6 +206,13 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.innerHeader {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-size: 1.65vmin;
+  margin-bottom: 1.65vmin;
 }
 
 .innerHeaderBethuneMurals {
@@ -244,13 +232,13 @@ hr {
   line-height: 1.9vmin;
   font-size: 1.9vmin;
   margin-bottom: 1.9vmin;
-  font-family: "ProximaNova";
+  font-family: "Roboto", sans-serif;
 
 }
 
 .innerKey {
-  font-family: "ProximaNovaBold";
-  font-weight: "bolder";
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .innerLink {
@@ -289,13 +277,18 @@ hr {
   padding-bottom: 10px;
 }
 
-.titleBethuneMurals .year {
-  font-family: "cormorant", serif;
-  font-size: 55px;
+.year {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
 }
 
+/*.titleBethuneMurals .year {
+  font-family: "Roboto", sans-serif;
+  font-size: 55px;
+}*/
+
 .bodyMain {
-  font-family: "Cormorant", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
 }
 
@@ -305,7 +298,8 @@ hr {
 }
 
 .bodyReview {
-  font-family: "Cormorant", serif;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
   font-size: 20px;
 }
 
@@ -320,8 +314,8 @@ hr {
 }
 
 .section .blameCover {
-  height: 85%;
-  width: 85%;
+  height: 80%;
+  width: 80%;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
@@ -331,14 +325,14 @@ hr {
   padding-bottom: 10px;
 }
 
-.titleBlame .year {
-  font-family: "Cormorant", serif;
+/*.titleBlame .year {
+  font-family: "Roboto", sans-serif;
   font-size: 55px;
-}
+}*/
 
 .end {
   margin-top: 10px;
-  margin-bottom: 75px;
+  margin-bottom: 250px;
 }
 
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=PT+Serif:wght@400;700&family=Playfair+Display+SC:wght@700&family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=PT+Serif:wght@700&family=Philosopher:wght@400;700&family=Playfair+Display+SC:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <title>Cloudsplitter Press</title>
 </head>
@@ -17,18 +17,17 @@
 <body>  
 
   <nav class="navbar navbar-expand-lg navbar-light flex-nowrap transparent" role='navigation'>
-
     <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar5">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="index.html">
+    <a href="./HTML/checkpoint.html">
     <img src="./Images/logo.png" href="index.html" width="100" height="60" alt="logo"></a>
     <div class="navbar-collapse collapse w-200" id="navbar5">
        
         <ul class="navbar-nav mx-auto center">
 
         	<li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="./HTML/checkpoint.html">Home</a>
             </li>
 
             <li class="nav-item">
@@ -48,18 +47,8 @@
     </div>
   </nav>
 
-  <!-- <div class="block">
-    <h1 class="blockHeader hidden">Cloudsplitter Press</h1>
-    <h2 class="blockDescriptor hidden">Cloudsplitter Press is an independent press founded By Tony Holtzman for the publication of his novels. Its name draws inspiration from the Mohican word "tahawus," meaning "cloudsplitter." Tahawus was the original name of Mount Marcy, a mountain in the High Peaks Region of the Adirondack mountains, and the highest pea in New York State. The Adirondacks feature prominently in The Bethune Murals, and of course, in The Adirondack Trilogy.</h2>
-    <h2><a class="blockLink hidden" href="./HTML/origins.html">click here to learn more about the origins of Cloudsplitter Press</a></h2>
-    <hr class="blockPadder hidden">
-    <h2 class="blockNewsHeader hidden">Recent News</h2>
-    <ol class="blockNewsList hidden">
-      <li class="blockNewsElement hidden"><span class="blockNewsElementDate">July 4, 2020</span> - Tony Holtzman's short story collection has just been published! <a class="blockNewsElementLink hidden" href="./HTML/shortStories.html">Click here to learn more</a></li>
-    </ol>
-    <hr class="blockNewsPadder">
-  </div> -->
-<!--   <div class="container header" id="welcomeText">
+  <div class="container header" id="welcomeText">
+    <div class="section">
   	<div class="row align-items-center">
   		<div class="col-12">
   <div class="homepage-text text-center">
@@ -70,11 +59,11 @@
   </div>
 </div>
 </div>
-</div> -->
-
-<header class="pageHeader">Welcome to Cloudsplitter Press</header>
+</div>
+</div>
 
   <div class="container body">
+    <div class="section hidden">
   	<div class="row align-items-start">
   		<div class="col-6 news">
   			<h2 class="header">Recent News</h2>
@@ -90,24 +79,24 @@
   			<div class="bookContainer">
 
           <div class="row">
-            <div class="col-sm">
-              <img src="./Images/shortStoriesCoverNormalized.png" class="book" alt="cover image">
+            <div class="col-sm col">
+              <a href="./HTML/shortStories.html"><img src="./Images/shortStoriesCoverNormalized.png" class="book" alt="cover image"></a>
             </div>
-            <div class="col-sm">
-              <img src="./Images/bethuneMuralsCoverNormalized.png" class="book" alt="cover image">
+            <div class="col-sm col">
+              <a href="./HTML/novels.html#jumpBethuneMurals"><img src="./Images/bethuneMuralsCoverNormalized.png" class="book" alt="cover image"></a>
             </div>
-            <div class="col-sm">
-              <img src="./Images/blameCoverNormalized.png" class="book" alt="cover image">
+            <div class="col-sm col">
+              <a href="./HTML/novels.html#jumpBlame"><img src="./Images/blameCoverNormalized.png" class="book" alt="cover image"></a>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-sm">
-              <img src="./Images/foreverWildCoverNormalized.png" class="book" alt="cover image">            </div>
-            <div class="col-sm">
-              <img src="./Images/theRailroadCoverNormalized.png" class="book" alt="cover image">            </div>
-            <div class="col-sm">
-              <img src="./Images/axtonLandingCoverNormalized.png" class="book" alt="cover image">            </div>
+            <div class="col-sm col"><a href="./HTML/novels.html#jumpForeverWild">
+              <img src="./Images/foreverWildCoverNormalized.png" class="book" alt="cover image">            </a></div>
+            <div class="col-sm col"><a href="./HTML/novels.html#jumpTheRailroad">
+              <img src="./Images/theRailroadCoverNormalized.png" class="book" alt="cover image"></a>            </div>
+            <div class="col-sm col">
+              <a href="./HTML/novels.html#jumpAxtonLanding"><img src="./Images/axtonLandingCoverNormalized.png" class="book" alt="cover image"></a>            </div>
           </div>
 
         </div>
@@ -115,9 +104,10 @@
   </div>
 </div>
 </div>
+</div>
 
 <!-- <script src="./JS/enter.js"></script> -->
-<!-- <script src="./JS/home.js"></script> -->
+<script src="./JS/shortStories.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
