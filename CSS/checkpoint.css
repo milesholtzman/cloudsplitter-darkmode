@@ -289,6 +289,10 @@ html,body {
 100% {opacity:0.9;}
 }
 
+.jumpLink:hover {
+  text-decoration: none;
+}
+
 .section {
   clear: both;
   display: block;

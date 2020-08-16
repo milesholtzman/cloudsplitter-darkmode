@@ -253,20 +253,40 @@ hr {
 .listElement.story {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 25px;
   margin-bottom: 15px;
 }
  .listElement.description {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size:25px;
+  font-size:20px;
   line-height: 35px;
  }
 
  .listPadder {
   margin-bottom: 0px;
   margin-top: 25px;
+}
+
+.buyLinks {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.prompt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.buyLink {
+  color: #2194c3;
+}
+
+.buyLink:hover {
+  text-decoration: none;
 }
 
 .end {

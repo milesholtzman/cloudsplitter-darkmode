@@ -325,10 +325,24 @@ hr {
   padding-bottom: 10px;
 }
 
-/*.titleBlame .year {
+.buyLinks {
   font-family: "Roboto", sans-serif;
-  font-size: 55px;
-}*/
+  font-size: 13px;
+}
+
+.prompt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.buyLink {
+  color: #2194c3;
+}
+
+.buyLink:hover {
+  text-decoration: none;
+}
 
 .end {
   margin-top: 10px;
