@@ -6,7 +6,7 @@ let numberOfScans = 1
 
 function isVisible(element) {
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = -100; 
+    let distanceFromTop = -25; 
 
     if(elementBox.top - window.innerHeight < distanceFromTop) {
         return true;

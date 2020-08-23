@@ -188,7 +188,6 @@ hr {
 .bethuneMuralsCover {
   height: 80%;
   width: 80%;
-  padding-top: 10px;
   filter: drop-shadow(-6px 7px 3px rgba(0, 0, 0, 0.39));
 }
 
@@ -290,6 +289,7 @@ hr {
 .bodyMain {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .bodyPadder {
@@ -301,6 +301,7 @@ hr {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .reviewPadder {
@@ -310,7 +311,7 @@ hr {
 
 .break {
   margin-top: 10px;
-  margin-bottom: 300px;
+  /*margin-bottom: 250px;*/
 }
 
 .section .blameCover {
@@ -342,6 +343,11 @@ hr {
 
 .buyLink:hover {
   text-decoration: none;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 75px;
 }
 
 .end {
