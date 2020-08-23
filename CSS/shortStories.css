@@ -116,7 +116,6 @@ html,body {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 10px;
   line-height: 30px;
 }
 
@@ -287,6 +286,10 @@ hr {
 
 .buyLink:hover {
   text-decoration: none;
+}
+
+.btn {
+  margin-top: 10px;
 }
 
 .end {

@@ -141,7 +141,7 @@ hr {
 
 .titleAxtonLanding {
   font-family: "Playfair Display SC", serif;
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -153,7 +153,7 @@ hr {
 
 .titleTheRailroad {
   font-family: "Playfair Display SC", serif;
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -165,7 +165,7 @@ hr {
 
 .titleForeverWild {
   font-family: "Playfair Display SC", serif;
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -241,13 +241,13 @@ hr {
   font-weight: 700;
 }
 
-.innerLink {
+/*.innerLink {
   color: #2194c3;
 }
 
 .innerLink:hover {
   text-decoration: none;
-}
+}*/
 
 .col-4.text-center {
   position: relative;
@@ -273,13 +273,13 @@ hr {
 
 .titleBethuneMurals {
   font-family: "SelznickNF";
-  font-size: 55px;
+  font-size: 45px;
   padding-bottom: 10px;
 }
 
 .year {
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /*.titleBethuneMurals .year {
@@ -289,7 +289,7 @@ hr {
 
 .bodyMain {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .bodyPadder {
@@ -321,19 +321,19 @@ hr {
 
 .titleBlame {
   font-family: "PT Serif", serif;
-  font-size: 55px;
+  font-size: 35px;
   padding-bottom: 10px;
 }
 
 .buyLinks {
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .prompt {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .buyLink {
