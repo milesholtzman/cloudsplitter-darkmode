@@ -112,3 +112,29 @@ document.addEventListener('wheel', scanDocumentReanimate);
 //       }
 //     }
 //   }
+
+function watchForTouch() {
+  // lastTouchTime is used for ignoring emulated mousemove events
+  let lastTouchTime = 0
+
+  // function enableHover() {
+  //   if (new Date() - lastTouchTime < 500) return
+  //   document.body.classList.add('hasHover')
+  // }
+
+  function disableScroll() {
+    document.body.classList.remove('hidden')
+  }
+
+  function updateLastTouchTime() {
+    lastTouchTime = new Date()
+  }
+
+  document.addEventListener('touchstart', updateLastTouchTime, true)
+  document.addEventListener('touchstart', disableScroll, true)
+  // document.addEventListener('mousemove', enableHover, true)
+
+  // enableHover()
+}
+
+watchForTouch()
