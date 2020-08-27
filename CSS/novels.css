@@ -355,4 +355,9 @@ hr {
   margin-bottom: 250px;
 }
 
+@media (max-width: 1025px) {
+  .hidden {
+    opacity: 1;
+  }
+}
 
