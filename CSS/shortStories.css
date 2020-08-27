@@ -305,7 +305,7 @@ hr {
   margin-top: 25px;
 }
 
-@media (max-width: 1025px) {
+@media (max-device-width: 1025px) {
   html,body {
     overflow-y: auto;
   }
