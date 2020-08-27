@@ -305,3 +305,13 @@ hr {
   margin-top: 25px;
 }
 
+@media (max-width: 1025px) {
+  html,body {
+    overflow-y: auto;
+  }
+
+  .container.body {
+    overflow: auto;
+  }
+}
+
