@@ -307,11 +307,11 @@ hr {
 
 @media (max-device-width: 1025px) {
   html,body {
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 
   .container.body {
-    overflow: auto;
+    overflow: auto !important;
   }
 }
 
