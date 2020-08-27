@@ -123,7 +123,7 @@ function watchForTouch() {
   // }
 
   function disableScroll() {
-    document.body.classList.remove('hidden')
+    document.getElementByClassName("section").classList.remove('hidden')
   }
 
   function updateLastTouchTime() {
