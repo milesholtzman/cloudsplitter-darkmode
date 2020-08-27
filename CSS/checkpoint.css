@@ -301,12 +301,12 @@ html,body {
 }
 
 .fadeOut {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease;
 }
 
 .hidden {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease;
 }
 

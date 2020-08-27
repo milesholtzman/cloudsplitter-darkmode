@@ -121,16 +121,22 @@ hr {
   display: block;
   opacity: 1;
   transition: opacity 1.5s ease;
+  -o-transition: 1s ease;
+  -webkit-transition: 1s ease;
 }
 
 .hidden {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1.5s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 1s ease;
 }
 
 .fadeOut {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease;
+  -o-transition: 1s ease;
+  -webkit-transition: 1s ease;
 }
 
 .axtonLandingCover {

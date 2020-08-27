@@ -240,11 +240,11 @@ hr {
 }
 
 .hidden {
-    opacity: 0;
+    opacity: 1;
 }
 
 .fadeOut {
-  opacity: 0;
+  opacity: 1;
   /*transition: opacity 1s ease;*/
 }
 
